@@ -6,6 +6,7 @@ Photography UI Design
 
 
 #### Developers
++ [Luan Vicente](https://github.com/idlua)
 
 
 #### Workflow
