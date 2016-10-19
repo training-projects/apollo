@@ -30,3 +30,14 @@ const BUILD_PATH = {
   js:     './assets/js/',
   images: './assets/images/'
 }
+
+
+// TASKS
+
+// HTML
+gulp.task('html', function() {
+  gulp.src(SRC_PATH.htmlMain)
+      .pipe(plumber())
+      .pipe(jade({ pretty: false }))
+      .pipe(gulp.dest(BUILD_PATH.root));
+});
