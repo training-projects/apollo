@@ -65,3 +65,16 @@ gulp.task('js', function() {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(BUILD_PATH.js));
 });
+
+
+// IMAGES
+gulp.task('images', function() {
+  gulp.src(SRC_PATH.images)
+      .pipe(plumber())
+      .pipe(imagemin({
+        compress: true,
+        interlaced: true,
+        optimizatonLevel: 3
+      }))
+      .pipe(gulp.dest(BUILD_PATH.images));
+});
