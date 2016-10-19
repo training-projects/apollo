@@ -54,3 +54,14 @@ gulp.task('css', function() {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(BUILD_PATH.css));
 });
+
+
+// JAVASCRIPT
+gulp.task('js', function() {
+  gulp.src(SRC_PATH.js)
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(uglify())
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest(BUILD_PATH.js));
+});
