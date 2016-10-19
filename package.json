@@ -1,0 +1,19 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "Photographer UI Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/training-projects/apollo.git"
+  },
+  "author": "Luan Vicente <hi@idlua.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/training-projects/apollo/issues"
+  },
+  "homepage": "https://github.com/training-projects/apollo#readme"
+}
