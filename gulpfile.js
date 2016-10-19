@@ -57,7 +57,6 @@ gulp.task('css', function() {
       .pipe(gulp.dest(BUILD_PATH.css));
 });
 
-
 // JAVASCRIPT
 gulp.task('js', function() {
   gulp.src(SRC_PATH.js)
@@ -67,7 +66,6 @@ gulp.task('js', function() {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(BUILD_PATH.js));
 });
-
 
 // IMAGES
 gulp.task('images', function() {
@@ -92,10 +90,17 @@ gulp.task('vendorBootstrap', function() {
       .pipe(gulp.dest(BUILD_PATH.js));
 });
 
-
 // WATCHERS
 gulp.task('watch', function() {
   gulp.watch(SRC_PATH.htmlPartials, ['html']);
   gulp.watch(SRC_PATH.cssPartials,  ['css']);
   gulp.watch(SRC_PATH.js,           ['js']);
+});
+
+// Browsersync
+gulp.task('browser-sync', ['css'], function() {
+    browserSync.init({
+        server: build_path.root,
+        notify: false
+    });
 });
