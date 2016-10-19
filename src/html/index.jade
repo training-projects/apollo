@@ -64,7 +64,20 @@ block content
 
 
   //- Large Slideshow Frame
-  //- ...
+  .content-wrapper
+    section.largeslideshow-frame
+      div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+        ol(class="carousel-indicators")
+
+        div(class="carousel-inner" role="listbox")
+          div(class="item active")
+            img(src="assets/images/photo-girl-camera.jpg" alt="")
+
+          div(class="item")
+            img(src="assets/images/photo-girl-bike.jpg" alt="...")
+
+        a(class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev")
+        a(class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next")
 
 
   //- Photography Frame
