@@ -107,5 +107,5 @@ gulp.task('browser-sync', ['css'], function() {
 
 // RUN
 gulp.task('default', ['html', 'css', 'js', 'vendorBootstrap', 'watch', 'browser-sync']);
-gulp.task('build',   ['html', 'css', 'images', 'vendorBootstrapCSS']);
+gulp.task('build',   ['html', 'css', 'images', 'vendorBootstrap']);
 gulp.task('no-bs',   ['html', 'css', 'js', 'watch']);
