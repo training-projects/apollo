@@ -1,0 +1,30 @@
+extends includes/_template.jade
+
+block content
+
+  //- Main Frame
+  .content-wrapper
+
+    //- Main Header
+    header.main-header
+
+      div.toggle-menu
+        h3.title Menu
+        span.togglebutton Open
+
+      div.header-content
+        h1.title Apollo
+
+        nav.main-navigation
+          h2.title Main Navigation
+
+          ul.menu-list
+            li.menu: a.link(href="#") Home
+            li.menu: a.link(href="#") About
+            li.menu: a.link(href="#") Large Slideshow
+            li.menu: a.link(href="#") Photos
+            li.menu: a.link(href="#") Small Slideshow
+            li.menu: a.link(href="#") Contact
+
+        footer.main-footer
+          p.copy &copy; 2016 Apollo.
