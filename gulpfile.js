@@ -13,3 +13,20 @@ var gulp         = require('gulp'),
     autoprefixer = require('autoprefixer-stylus'),
     uglify       = require('gulp-uglify'),
     imagemin     = require('gulp-imagemin');
+
+
+// PATHS
+const SRC_PATH = {
+  htmlMain:     'src/html/*.jade',
+  cssMain:      'src/css/main.styl',
+  cssPartials:  'src/css/**/*.styl',
+  js:           'src/js/**/*.js',
+  images:       'src/images/**/*'
+}
+
+const BUILD_PATH = {
+  root:   './',
+  css:    './assets/css/',
+  js:     './assets/js/',
+  images: './assets/images/'
+}
