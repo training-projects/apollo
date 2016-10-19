@@ -1,0 +1,55 @@
+// Convert PX to REM
+//
+// This mixin convert px to rem.
+//
+// Don't forget to set the base font size on the <html> tag, usually 100%.
+//
+// Based on David Walsh mixin.
+// See more at: davidwalsh.name/stylus-rem
+//
+// Example:
+//
+// .smaller
+//   set-font-size(13px)
+//
+// Compile to:
+//
+// .smaller {
+//   font-size: 13px;
+//   font-size: .8125rem;
+// }
+set_font-size(value)
+  font-size value
+
+  if (value is inherit)
+    /* do nothing, "inherit" has no unit */
+  else
+    font-size: remify(value);
+
+// Separate mixin, so it can be used elsewhere.
+remify(value)
+  u = unit(value)
+
+  if (u is 'px')
+    return unit(value/16, 'rem')
+  else
+    return unit(value, u)
+
+
+// Set font-weight
+//
+// Mixin for define font-weight.
+//
+// Based on Harry Roberts mixin. (csswizardry.com)
+set_font-weight(weight)
+  if (weight == light)
+    font-weight: 100
+
+  if (weight == regular)
+    font-weight: 300
+
+  if (weight == semibold)
+    font-weight: 500
+
+  if (weight == bold)
+    font-weight: 700
