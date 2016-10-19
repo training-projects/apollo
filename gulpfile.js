@@ -41,3 +41,16 @@ gulp.task('html', function() {
       .pipe(jade({ pretty: false }))
       .pipe(gulp.dest(BUILD_PATH.root));
 });
+
+// CSS
+gulp.task('css', function() {
+  gulp.src(SRC_PATH.cssMain)
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(stylus({
+        compress: true,
+        use: autoprefixer({ browsers: ['last 2 versions'] })
+      }))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest(BUILD_PATH.css));
+});
