@@ -100,7 +100,12 @@ gulp.task('watch', function() {
 // Browsersync
 gulp.task('browser-sync', ['css'], function() {
     browserSync.init({
-        server: build_path.root,
+        server: BUILD_PATH.root,
         notify: false
     });
 });
+
+// RUN
+gulp.task('default', ['html', 'css', 'js', 'vendorBootstrap', 'watch', 'browser-sync']);
+gulp.task('build',   ['html', 'css', 'images', 'vendorBootstrapCSS']);
+gulp.task('no-bs',   ['html', 'css', 'js', 'watch']);
