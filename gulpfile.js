@@ -21,7 +21,9 @@ const SRC_PATH = {
   cssMain:      'src/css/main.styl',
   cssPartials:  'src/css/**/*.styl',
   js:           'src/js/**/*.js',
-  images:       'src/images/**/*'
+  images:       'src/images/**/*',
+  vendorBootstrapCSS: 'src/vendor/bootstrap/bootstrap.min.css',
+  vendorBootstrapJS: 'src/vendor/bootstrap/bootstrap.min.js'
 }
 
 const BUILD_PATH = {
@@ -78,3 +80,14 @@ gulp.task('images', function() {
       }))
       .pipe(gulp.dest(BUILD_PATH.images));
 });
+
+// BOOTSTRAP CAROUSEL
+gulp.task('vendorBootstrap', function() {
+  gulp.src(SRC_PATH.vendorBootstrapCSS)
+      .pipe(plumber())
+      .pipe(gulp.dest(BUILD_PATH.css));
+
+  gulp.src(SRC_PATH.vendorBootstrapJS)
+      .pipe(plumber())
+      .pipe(gulp.dest(BUILD_PATH.js));
+})
