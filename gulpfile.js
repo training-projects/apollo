@@ -40,7 +40,7 @@ const BUILD_PATH = {
 gulp.task('html', function() {
   gulp.src(SRC_PATH.htmlMain)
       .pipe(plumber())
-      .pipe(jade({ pretty: false }))
+      .pipe(jade({ pretty: true }))
       .pipe(gulp.dest(BUILD_PATH.root));
 });
 
