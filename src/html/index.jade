@@ -19,19 +19,19 @@ block content
           h2.title Main Navigation
 
           ul.menu-list
-            li.menu: a.link(href="#") Home
-            li.menu: a.link(href="#") About
-            li.menu: a.link(href="#") Large Slideshow
-            li.menu: a.link(href="#") Photos
-            li.menu: a.link(href="#") Small Slideshow
-            li.menu: a.link(href="#") Contact
+            li.menu: a.link(href="#home") Home
+            li.menu: a.link(href="#about") About
+            li.menu: a.link(href="#largeslideshow") Large Slideshow
+            li.menu: a.link(href="#photos") Photos
+            li.menu: a.link(href="#smallslideshow") Small Slideshow
+            li.menu: a.link(href="#contact") Contact
 
         footer.main-footer
           p.copy &copy; 2016 Apollo.
 
   //- Content of Main Frame
   .content-wrapper
-    section.main-frame
+    section.main-frame#home
       h2.title Apollo
         span.lighttext  Photographer UI Design
       p.description
@@ -45,7 +45,7 @@ block content
 
   //- About Frame
   .content-wrapper
-    section.about-frame
+    section.about-frame#about
       img.photo(src="assets/images/photo-camera.png" alt="Camera Picture")
       h2.title <span class="lighttext">&#8212; My name is</span> Apollo
       p.description
@@ -65,7 +65,7 @@ block content
 
   //- Large Slideshow Frame
   .content-wrapper
-    section.largeslideshow-frame
+    section.largeslideshow-frame#largeslideshow
       div(id="large-slideshow" class="carousel slide" data-ride="carousel")
         ol(class="carousel-indicators")
 
@@ -86,7 +86,7 @@ block content
 
   //- Photography Frame
   .content-wrapper
-    section.photography-frame
+    section.photography-frame#photos
       h2.title Ut enim
         span.lighttext  ad minim
       p.description
@@ -102,7 +102,7 @@ block content
 
   //- Small Slideshow Frame
   .content-wrapper
-    section.smallslideshow-frame
+    section.smallslideshow-frame#smallslideshow
       div(id="small-slideshow" class="carousel slide" data-ride="carousel")
         ol(class="carousel-indicators")
 
@@ -127,7 +127,7 @@ block content
 
   //- Contact Frame
   .content-wrapper
-    section.contact-frame
+    section.contact-frame#contact
       h2.title Say
         span.lighttext  Hello
       p.description
