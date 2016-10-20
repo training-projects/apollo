@@ -80,9 +80,9 @@ block content
                 alt="Picture of Photographer")
 
         a(class="left carousel-control", href="#large-slideshow",
-          role="button" data-slide="prev")
+          role="button" data-slide="prev"): span.back
         a(class="right carousel-control", href="#large-slideshow",
-          role="button" data-slide="next")
+          role="button" data-slide="next"): span.next
 
 
   //- Photography Frame
@@ -122,9 +122,9 @@ block content
                 alt="Picture of Photographer")
 
         a(class="left carousel-control", href="#small-slideshow",
-          role="button" data-slide="prev")
+          role="button" data-slide="prev"): span.back
         a(class="right carousel-control", href="#small-slideshow",
-          role="button" data-slide="next")
+          role="button" data-slide="next"): span.next
 
 
   //- Contact Frame
@@ -140,4 +140,4 @@ block content
         input.field.basic(type="email", placeholder="Your Email")
         input.field.basic(type="text", placeholder="Subject")
         textarea.field.message(rows="10" cols="30")
-        input.send(type="submit" value="Send Message" role="button")
+        input.button(type="submit" value="Send Message" role="button")
