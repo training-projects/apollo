@@ -43,13 +43,10 @@ remify(value)
 // Based on Harry Roberts mixin. (csswizardry.com)
 set_font-weight(weight)
   if (weight == light)
-    font-weight: 100
-
-  if (weight == regular)
     font-weight: 300
 
-  if (weight == semibold)
-    font-weight: 500
+  if (weight == regular)
+    font-weight: 400
 
-  if (weight == bold)
+  if (weight == semibold)
     font-weight: 700
