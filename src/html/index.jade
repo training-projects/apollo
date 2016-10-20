@@ -66,7 +66,7 @@ block content
   //- Large Slideshow Frame
   .content-wrapper
     section.largeslideshow-frame
-      div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+      div(id="large-slideshow" class="carousel slide" data-ride="carousel")
         ol(class="carousel-indicators")
 
         div(class="carousel-inner" role="listbox")
@@ -78,9 +78,9 @@ block content
             img(src="assets/images/photo-girl-camera-2.jpg",
                 alt="Picture of Photographer")
 
-        a(class="left carousel-control", href="#carousel-example-generic",
+        a(class="left carousel-control", href="#large-slideshow",
           role="button" data-slide="prev")
-        a(class="right carousel-control", href="#carousel-example-generic",
+        a(class="right carousel-control", href="#large-slideshow",
           role="button" data-slide="next")
 
 
@@ -101,7 +101,28 @@ block content
 
 
   //- Small Slideshow Frame
-  //- ...
+  .content-wrapper
+    section.smallslideshow-frame
+      div(id="small-slideshow" class="carousel slide" data-ride="carousel")
+        ol(class="carousel-indicators")
+
+        div(class="carousel-inner" role="listbox")
+          div(class="item")
+            img(src="assets/images/photo-city-bridge.jpg",
+                alt="Picture of Photographer")
+
+          div(class="item active")
+            img(src="assets/images/photo-girl-bike.jpg",
+                alt="Picture of Photographer")
+
+          div(class="item")
+            img(src="assets/images/photo-way.jpg",
+                alt="Picture of Photographer")
+
+        a(class="left carousel-control", href="#small-slideshow",
+          role="button" data-slide="prev")
+        a(class="right carousel-control", href="#small-slideshow",
+          role="button" data-slide="next")
 
 
   //- Contact Frame
