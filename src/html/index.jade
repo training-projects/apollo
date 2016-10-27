@@ -3,7 +3,7 @@ extends includes/_template.jade
 block content
 
   //- Main Frame
-  .content-wrapper
+  section.frame.main-frame#home
 
     //- Main Header
     header.main-header
@@ -29,8 +29,7 @@ block content
         footer.main-footer
           p.copy &copy; 2016 Apollo.
 
-    //- Content of Main Frame
-    section.main-frame#home
+    .content-wrapper
       div.text-box
         h2.title Apollo
           span.lighttext  Photographer UI Design
@@ -44,8 +43,8 @@ block content
 
 
   //- About Frame
-  .content-wrapper
-    section.about-frame#about
+  section.frame.about-frame#about
+    .content-wrapper
       img.photo(src="assets/images/photo-camera.png" alt="Camera Picture")
       div.text-box
         h2.title <span class="lighttext">&#8212; My name is</span> Apollo
@@ -65,8 +64,8 @@ block content
 
 
   //- Large Slideshow Frame
-  .content-wrapper
-    section.largeslideshow-frame#largeslideshow
+  section.frame.largeslideshow-frame#largeslideshow
+    .content-wrapper
       div(id="large-slideshow" class="carousel slide" data-ride="carousel")
         ol(class="carousel-indicators")
 
@@ -86,8 +85,8 @@ block content
 
 
   //- Photography Frame
-  .content-wrapper
-    section.photography-frame#photos
+  section.frame.photography-frame#photos
+    .content-wrapper
       div.text-box
         h2.title Ut enim
           span.lighttext  ad minim
@@ -103,8 +102,8 @@ block content
 
 
   //- Small Slideshow Frame
-  .content-wrapper
-    section.smallslideshow-frame#smallslideshow
+  section.frame.smallslideshow-frame#smallslideshow
+    .content-wrapper
       div(id="small-slideshow" class="carousel slide" data-ride="carousel")
         ol(class="carousel-indicators")
 
@@ -128,8 +127,8 @@ block content
 
 
   //- Contact Frame
-  .content-wrapper
-    section.contact-frame#contact
+  section.frame.contact-frame#contact
+    .content-wrapper
       h2.title Say
         span.lighttext  Hello
       p.description
