@@ -92,7 +92,7 @@ gulp.task('vendorBootstrap', function() {
 
 // WATCHERS
 gulp.task('watch', function() {
-  gulp.watch(SRC_PATH.htmlPartials, ['html']);
+  gulp.watch(SRC_PATH.htmlMain,     ['html']);
   gulp.watch(SRC_PATH.cssPartials,  ['css']);
   gulp.watch(SRC_PATH.js,           ['js']);
 });
