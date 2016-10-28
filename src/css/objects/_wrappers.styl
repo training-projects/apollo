@@ -15,6 +15,9 @@
 .content-wrapper
   padding: 1em
 
+  &::after
+    @extend .clearfix
+
   /* @media 768px */
   @media (min-width: 768px)
     padding: 2.5em
@@ -22,3 +25,11 @@
 
     > .text-box
       text-align: left
+
+      /* @media 1024px */
+      @media (min-width: 1024px)
+        max-width: calc(40%)
+        margin-top: 12%
+
+    > .photo
+      max-width: 50%
