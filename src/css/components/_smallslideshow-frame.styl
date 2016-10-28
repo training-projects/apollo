@@ -1,12 +1,19 @@
 .smallslideshow-frame
   background-image: url('../images/letter-l.png')
 
-  .item img
-    width: 100%
-    margin-right: auto
-    margin-left: auto
+  .carousel
+    /* @media 1024px */
+    @media (min-width: 1024px)
+      max-width: 50%
+      margin-right: auto
+      margin-left: auto
 
-  .left
-    margin-left: -0.5em
-  .right
-    margin-right: -0.5em
+    .item img
+      width: 100%
+      margin-right: auto
+      margin-left: auto
+
+    .left
+      margin-left: -0.5em
+    .right
+      margin-right: -0.5em
