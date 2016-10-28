@@ -12,116 +12,118 @@
     <title>Apollo</title>
   </head>
   <body>
-    <section id="home" class="frame main-frame">
-      <header class="main-header">
-        <div class="toggle-menu">
-          <h3 class="title">Menu</h3><span class="togglebutton"></span>
+    <div class="general-wrapper">
+      <section id="home" class="frame main-frame">
+        <header class="main-header">
+          <div class="toggle-menu">
+            <h3 class="title">Menu</h3><span class="togglebutton"></span>
+          </div>
+          <div class="header-content"><span class="togglebutton"></span>
+            <h1 class="title">Apollo</h1>
+            <nav class="main-navigation">
+              <h2 class="title">Main Navigation</h2>
+              <ul class="menu-list">
+                <li class="menu"><a href="#home" class="link">Home</a></li>
+                <li class="menu"><a href="#about" class="link">About</a></li>
+                <li class="menu"><a href="#largeslideshow" class="link">Large Slideshow</a></li>
+                <li class="menu"><a href="#photos" class="link">Photos</a></li>
+                <li class="menu"><a href="#smallslideshow" class="link">Small Slideshow</a></li>
+                <li class="menu"><a href="#contact" class="link">Contact</a></li>
+              </ul>
+            </nav>
+            <footer class="main-footer">
+              <p class="copy">&copy; 2016 Apollo.</p>
+            </footer>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <div class="text-box">
+            <h2 class="title">Apollo<span class="lighttext"> Photographer UI Design</span></h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore.
+            </p>
+          </div><img src="assets/images/photo-back.png" alt="John Apollo Picture" class="photo">
         </div>
-        <div class="header-content"><span class="togglebutton"></span>
-          <h1 class="title">Apollo</h1>
-          <nav class="main-navigation">
-            <h2 class="title">Main Navigation</h2>
-            <ul class="menu-list">
-              <li class="menu"><a href="#home" class="link">Home</a></li>
-              <li class="menu"><a href="#about" class="link">About</a></li>
-              <li class="menu"><a href="#largeslideshow" class="link">Large Slideshow</a></li>
-              <li class="menu"><a href="#photos" class="link">Photos</a></li>
-              <li class="menu"><a href="#smallslideshow" class="link">Small Slideshow</a></li>
-              <li class="menu"><a href="#contact" class="link">Contact</a></li>
+      </section>
+      <section id="about" class="frame about-frame">
+        <div class="content-wrapper"><img src="assets/images/photo-camera.png" alt="Camera Picture" class="photo">
+          <div class="text-box">
+            <h2 class="title"><span class="lighttext">&#8212; My name is</span> Apollo</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.  Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <ul class="social-list">
+              <li class="social facebook"><a href="#" class="link">Facebook</a></li>
+              <li class="social instagram"><a href="#" class="link">Instagram</a></li>
+              <li class="social twitter"><a href="#" class="link">Twitter</a></li>
+              <li class="social pinterest"><a href="#" class="link">Pinterest</a></li>
             </ul>
-          </nav>
-          <footer class="main-footer">
-            <p class="copy">&copy; 2016 Apollo.</p>
-          </footer>
+          </div>
         </div>
-      </header>
-      <div class="content-wrapper">
-        <div class="text-box">
-          <h2 class="title">Apollo<span class="lighttext"> Photographer UI Design</span></h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore.
-          </p>
-        </div><img src="assets/images/photo-back.png" alt="John Apollo Picture" class="photo">
-      </div>
-    </section>
-    <section id="about" class="frame about-frame">
-      <div class="content-wrapper"><img src="assets/images/photo-camera.png" alt="Camera Picture" class="photo">
-        <div class="text-box">
-          <h2 class="title"><span class="lighttext">&#8212; My name is</span> Apollo</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.  Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <ul class="social-list">
-            <li class="social facebook"><a href="#" class="link">Facebook</a></li>
-            <li class="social instagram"><a href="#" class="link">Instagram</a></li>
-            <li class="social twitter"><a href="#" class="link">Twitter</a></li>
-            <li class="social pinterest"><a href="#" class="link">Pinterest</a></li>
-          </ul>
+      </section>
+      <section id="largeslideshow" class="frame largeslideshow-frame">
+        <div class="content-wrapper">
+          <div id="large-slideshow" data-ride="carousel" class="carousel slide">
+            <ol class="carousel-indicators"></ol>
+            <div role="listbox" class="carousel-inner">
+              <div class="item active"><img src="assets/images/photo-girl-camera.jpg" alt="Picture of Photographer"></div>
+              <div class="item"><img src="assets/images/photo-man-camera.jpg" alt="Picture of Photographer"></div>
+            </div><a href="#large-slideshow" role="button" data-slide="prev" class="left carousel-control"><span class="back"></span></a><a href="#large-slideshow" role="button" data-slide="next" class="right carousel-control"><span class="next"></span></a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="largeslideshow" class="frame largeslideshow-frame">
-      <div class="content-wrapper">
-        <div id="large-slideshow" data-ride="carousel" class="carousel slide">
-          <ol class="carousel-indicators"></ol>
-          <div role="listbox" class="carousel-inner">
-            <div class="item active"><img src="assets/images/photo-girl-camera.jpg" alt="Picture of Photographer"></div>
-            <div class="item"><img src="assets/images/photo-man-camera.jpg" alt="Picture of Photographer"></div>
-          </div><a href="#large-slideshow" role="button" data-slide="prev" class="left carousel-control"><span class="back"></span></a><a href="#large-slideshow" role="button" data-slide="next" class="right carousel-control"><span class="next"></span></a>
+      </section>
+      <section id="photos" class="frame photography-frame">
+        <div class="content-wrapper">
+          <div class="text-box">
+            <h2 class="title">Ut enim<span class="lighttext"> ad minim</span></h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.  Duis aute irure dolor in
+            </p>
+          </div><img src="assets/images/photo-stairs.jpg" alt="Stairs Photo" class="photo">
         </div>
-      </div>
-    </section>
-    <section id="photos" class="frame photography-frame">
-      <div class="content-wrapper">
-        <div class="text-box">
-          <h2 class="title">Ut enim<span class="lighttext"> ad minim</span></h2>
+      </section>
+      <section id="smallslideshow" class="frame smallslideshow-frame">
+        <div class="content-wrapper">
+          <div id="small-slideshow" data-ride="carousel" class="carousel slide">
+            <ol class="carousel-indicators"></ol>
+            <div role="listbox" class="carousel-inner">
+              <div class="item"><img src="assets/images/photo-city-bridge.jpg" alt="Picture of Photographer"></div>
+              <div class="item active"><img src="assets/images/photo-girl-bike.jpg" alt="Picture of Photographer"></div>
+              <div class="item"><img src="assets/images/photo-way.jpg" alt="Picture of Photographer"></div>
+            </div><a href="#small-slideshow" role="button" data-slide="prev" class="left carousel-control"><span class="back"></span></a><a href="#small-slideshow" role="button" data-slide="next" class="right carousel-control"><span class="next"></span></a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="frame contact-frame">
+        <div class="content-wrapper">
+          <h2 class="title">Say<span class="lighttext"> Hello</span></h2>
           <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.  Duis aute irure dolor in
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
           </p>
-        </div><img src="assets/images/photo-stairs.jpg" alt="Stairs Photo" class="photo">
-      </div>
-    </section>
-    <section id="smallslideshow" class="frame smallslideshow-frame">
-      <div class="content-wrapper">
-        <div id="small-slideshow" data-ride="carousel" class="carousel slide">
-          <ol class="carousel-indicators"></ol>
-          <div role="listbox" class="carousel-inner">
-            <div class="item"><img src="assets/images/photo-city-bridge.jpg" alt="Picture of Photographer"></div>
-            <div class="item active"><img src="assets/images/photo-girl-bike.jpg" alt="Picture of Photographer"></div>
-            <div class="item"><img src="assets/images/photo-way.jpg" alt="Picture of Photographer"></div>
-          </div><a href="#small-slideshow" role="button" data-slide="prev" class="left carousel-control"><span class="back"></span></a><a href="#small-slideshow" role="button" data-slide="next" class="right carousel-control"><span class="next"></span></a>
+          <form class="contact-form">
+            <input type="email" placeholder="Your Email" class="field basic">
+            <input type="text" placeholder="Subject" class="field basic">
+            <textarea rows="5" cols="30" placeholder="Message" class="field message"></textarea>
+            <input type="submit" value="Send Message" role="button" class="button">
+          </form>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="frame contact-frame">
-      <div class="content-wrapper">
-        <h2 class="title">Say<span class="lighttext"> Hello</span></h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
-        </p>
-        <form class="contact-form">
-          <input type="email" placeholder="Your Email" class="field basic">
-          <input type="text" placeholder="Subject" class="field basic">
-          <textarea rows="5" cols="30" placeholder="Message" class="field message"></textarea>
-          <input type="submit" value="Send Message" role="button" class="button">
-        </form>
-      </div>
-    </section>
+      </section>
+    </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>

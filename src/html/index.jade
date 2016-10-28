@@ -1,141 +1,142 @@
 extends includes/_template.jade
 
 block content
+  .general-wrapper
 
-  //- Main Frame
-  section.frame.main-frame#home
+    //- Main Frame
+    section.frame.main-frame#home
 
-    //- Main Header
-    header.main-header
+      //- Main Header
+      header.main-header
 
-      div.toggle-menu
-        h3.title Menu
-        span.togglebutton
+        div.toggle-menu
+          h3.title Menu
+          span.togglebutton
 
-      div.header-content
-        span.togglebutton
+        div.header-content
+          span.togglebutton
 
-        h1.title Apollo
+          h1.title Apollo
 
-        nav.main-navigation
-          h2.title Main Navigation
+          nav.main-navigation
+            h2.title Main Navigation
 
-          ul.menu-list
-            li.menu: a.link(href="#home") Home
-            li.menu: a.link(href="#about") About
-            li.menu: a.link(href="#largeslideshow") Large Slideshow
-            li.menu: a.link(href="#photos") Photos
-            li.menu: a.link(href="#smallslideshow") Small Slideshow
-            li.menu: a.link(href="#contact") Contact
+            ul.menu-list
+              li.menu: a.link(href="#home") Home
+              li.menu: a.link(href="#about") About
+              li.menu: a.link(href="#largeslideshow") Large Slideshow
+              li.menu: a.link(href="#photos") Photos
+              li.menu: a.link(href="#smallslideshow") Small Slideshow
+              li.menu: a.link(href="#contact") Contact
 
-        footer.main-footer
-          p.copy &copy; 2016 Apollo.
+          footer.main-footer
+            p.copy &copy; 2016 Apollo.
 
-    .content-wrapper
-      div.text-box
-        h2.title Apollo
-          span.lighttext  Photographer UI Design
-        p.description
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          | ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          | reprehenderit in voluptate velit esse cillum dolore.
-      img.photo(src="assets/images/photo-back.png" alt="John Apollo Picture")
+      .content-wrapper
+        div.text-box
+          h2.title Apollo
+            span.lighttext  Photographer UI Design
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            | enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            | ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            | reprehenderit in voluptate velit esse cillum dolore.
+        img.photo(src="assets/images/photo-back.png" alt="John Apollo Picture")
 
 
-  //- About Frame
-  section.frame.about-frame#about
-    .content-wrapper
-      img.photo(src="assets/images/photo-camera.png" alt="Camera Picture")
-      div.text-box
-        h2.title <span class="lighttext">&#8212; My name is</span> Apollo
+    //- About Frame
+    section.frame.about-frame#about
+      .content-wrapper
+        img.photo(src="assets/images/photo-camera.png" alt="Camera Picture")
+        div.text-box
+          h2.title <span class="lighttext">&#8212; My name is</span> Apollo
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            | minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            | aliquip ex ea commodo consequat.  Duis aute irure dolor in
+            | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            | pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            | culpa qui officia deserunt mollit anim id est laborum.
+          ul.social-list
+            li.social.facebook: a.link(href="#") Facebook
+            li.social.instagram: a.link(href="#") Instagram
+            li.social.twitter: a.link(href="#") Twitter
+            li.social.pinterest: a.link(href="#") Pinterest
+
+
+    //- Large Slideshow Frame
+    section.frame.largeslideshow-frame#largeslideshow
+      .content-wrapper
+        div(id="large-slideshow" class="carousel slide" data-ride="carousel")
+          ol(class="carousel-indicators")
+
+          div(class="carousel-inner" role="listbox")
+            div(class="item active")
+              img(src="assets/images/photo-girl-camera.jpg",
+                  alt="Picture of Photographer")
+
+            div(class="item")
+              img(src="assets/images/photo-man-camera.jpg",
+                  alt="Picture of Photographer")
+
+          a(class="left carousel-control", href="#large-slideshow",
+            role="button" data-slide="prev"): span.back
+          a(class="right carousel-control", href="#large-slideshow",
+            role="button" data-slide="next"): span.next
+
+
+    //- Photography Frame
+    section.frame.photography-frame#photos
+      .content-wrapper
+        div.text-box
+          h2.title Ut enim
+            span.lighttext  ad minim
+          p.description
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            | minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            | aliquip ex ea commodo consequat.  Duis aute irure dolor in
+        img.photo(src="assets/images/photo-stairs.jpg" alt="Stairs Photo")
+
+
+    //- Small Slideshow Frame
+    section.frame.smallslideshow-frame#smallslideshow
+      .content-wrapper
+        div(id="small-slideshow" class="carousel slide" data-ride="carousel")
+          ol(class="carousel-indicators")
+
+          div(class="carousel-inner" role="listbox")
+            div(class="item")
+              img(src="assets/images/photo-city-bridge.jpg",
+                  alt="Picture of Photographer")
+
+            div(class="item active")
+              img(src="assets/images/photo-girl-bike.jpg",
+                  alt="Picture of Photographer")
+
+            div(class="item")
+              img(src="assets/images/photo-way.jpg",
+                  alt="Picture of Photographer")
+
+          a(class="left carousel-control", href="#small-slideshow",
+            role="button" data-slide="prev"): span.back
+          a(class="right carousel-control", href="#small-slideshow",
+            role="button" data-slide="next"): span.next
+
+
+    //- Contact Frame
+    section.frame.contact-frame#contact
+      .content-wrapper
+        h2.title Say
+          span.lighttext  Hello
         p.description
           | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          | minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          | aliquip ex ea commodo consequat.  Duis aute irure dolor in
-          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          | pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          | culpa qui officia deserunt mollit anim id est laborum.
-        ul.social-list
-          li.social.facebook: a.link(href="#") Facebook
-          li.social.instagram: a.link(href="#") Instagram
-          li.social.twitter: a.link(href="#") Twitter
-          li.social.pinterest: a.link(href="#") Pinterest
-
-
-  //- Large Slideshow Frame
-  section.frame.largeslideshow-frame#largeslideshow
-    .content-wrapper
-      div(id="large-slideshow" class="carousel slide" data-ride="carousel")
-        ol(class="carousel-indicators")
-
-        div(class="carousel-inner" role="listbox")
-          div(class="item active")
-            img(src="assets/images/photo-girl-camera.jpg",
-                alt="Picture of Photographer")
-
-          div(class="item")
-            img(src="assets/images/photo-man-camera.jpg",
-                alt="Picture of Photographer")
-
-        a(class="left carousel-control", href="#large-slideshow",
-          role="button" data-slide="prev"): span.back
-        a(class="right carousel-control", href="#large-slideshow",
-          role="button" data-slide="next"): span.next
-
-
-  //- Photography Frame
-  section.frame.photography-frame#photos
-    .content-wrapper
-      div.text-box
-        h2.title Ut enim
-          span.lighttext  ad minim
-        p.description
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          | minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          | aliquip ex ea commodo consequat.  Duis aute irure dolor in
-      img.photo(src="assets/images/photo-stairs.jpg" alt="Stairs Photo")
-
-
-  //- Small Slideshow Frame
-  section.frame.smallslideshow-frame#smallslideshow
-    .content-wrapper
-      div(id="small-slideshow" class="carousel slide" data-ride="carousel")
-        ol(class="carousel-indicators")
-
-        div(class="carousel-inner" role="listbox")
-          div(class="item")
-            img(src="assets/images/photo-city-bridge.jpg",
-                alt="Picture of Photographer")
-
-          div(class="item active")
-            img(src="assets/images/photo-girl-bike.jpg",
-                alt="Picture of Photographer")
-
-          div(class="item")
-            img(src="assets/images/photo-way.jpg",
-                alt="Picture of Photographer")
-
-        a(class="left carousel-control", href="#small-slideshow",
-          role="button" data-slide="prev"): span.back
-        a(class="right carousel-control", href="#small-slideshow",
-          role="button" data-slide="next"): span.next
-
-
-  //- Contact Frame
-  section.frame.contact-frame#contact
-    .content-wrapper
-      h2.title Say
-        span.lighttext  Hello
-      p.description
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        | minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
-      form.contact-form
-        input.field.basic(type="email", placeholder="Your Email")
-        input.field.basic(type="text", placeholder="Subject")
-        textarea.field.message(rows="5", cols="30", placeholder="Message")
-        input.button(type="submit" value="Send Message" role="button")
+          | minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        form.contact-form
+          input.field.basic(type="email", placeholder="Your Email")
+          input.field.basic(type="text", placeholder="Subject")
+          textarea.field.message(rows="5", cols="30", placeholder="Message")
+          input.button(type="submit" value="Send Message" role="button")
