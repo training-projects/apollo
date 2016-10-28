@@ -1,14 +1,43 @@
 .contact-frame
   background-image: url('../images/letter-o.png')
 
-  .contact-form
+  > .content-wrapper
 
-    > .field
-      width: 100%
-      margin-bottom: 0.8em
+    > .description
+      /* @media 1024px */
+      @media (min-width: 1024px)
+        max-width: 70%
+        margin-right: auto
+        margin-left: auto
 
-    > .button:hover
-      color: #000
-      background-color: color_lightgray
-      border: 1px solid #000
+    > .contact-form
+      /* @media 1024px */
+      @media (min-width: 1024px)
+        max-width: 40%
+        margin-top: 2.5em
+        margin-right: auto
+        margin-left: auto
 
+
+      > .field
+        width: 100%
+        margin-bottom: 2.5em
+
+      > .basic
+        /* @media 1024px */
+        @media (min-width: 1024px)
+          display: inline-block
+          width: 45%
+
+          &:nth-child(1)
+            float: left
+          &:nth-child(2)
+            float: right
+
+      > .button
+        set_font-weight(semibold)
+
+        &:hover
+          color: #000
+          background-color: color_lightgray
+          border: 1px solid #000
