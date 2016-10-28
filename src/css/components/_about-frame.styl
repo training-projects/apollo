@@ -2,40 +2,56 @@
   padding-top: 1em
   background-image: url('../images/letter-p.png')
 
-  .text-box
+  > .content-wrapper
 
-    > .title
-      set_font-size(30px)
+    >.text-box
 
-    > .social-list
-      margin-top: 2em
+      /* @media 1024px */
+      @media (min-width: 1024px)
+        float: right
+        margin-right: 10%
 
-      > .social
-        display: inline-block
-        width: 24px
-        height: 24px
-        text-indent: -9999px
-        cursor: pointer
+      > .title
+        set_font-size(30px)
 
-        &:not(:last-child)
-          margin-right: 0.8em
+        /* @media 768px */
+        @media (min-width: 768px)
+          set_font-size(32px)
 
-      > .facebook
-        background-image: url('../images/facebook.png')
-        &:hover
-          background-image: url('../images/facebook-hover.png')
+      > .social-list
+        margin-top: 2em
 
-      > .instagram
-        background-image: url('../images/instagram.png')
-        &:hover
-          background-image: url('../images/instagram-hover.png')
+        > .social
+          display: inline-block
+          width: 24px
+          height: 24px
+          text-indent: -9999px
+          cursor: pointer
 
-      > .twitter
-        background-image: url('../images/twitter.png')
-        &:hover
-          background-image: url('../images/twitter-hover.png')
+          &:not(:last-child)
+            margin-right: 0.8em
 
-      > .pinterest
-        background-image: url('../images/pinterest.png')
-        &:hover
-          background-image: url('../images/pinterest-hover.png')
+        > .facebook
+          background-image: url('../images/facebook.png')
+          &:hover
+            background-image: url('../images/facebook-hover.png')
+
+        > .instagram
+          background-image: url('../images/instagram.png')
+          &:hover
+            background-image: url('../images/instagram-hover.png')
+
+        > .twitter
+          background-image: url('../images/twitter.png')
+          &:hover
+            background-image: url('../images/twitter-hover.png')
+
+        > .pinterest
+          background-image: url('../images/pinterest.png')
+          &:hover
+            background-image: url('../images/pinterest-hover.png')
+
+    > .photo
+      float: left
+      width: 35%
+      margin-left: 8%
