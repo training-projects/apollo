@@ -101,7 +101,7 @@ gulp.task('watch', function() {
 gulp.task('browser-sync', ['css'], function() {
     browserSync.init({
         server: BUILD_PATH.root,
-        //notify: false
+        notify: false
     });
 });
 
