@@ -2,7 +2,7 @@
 
 Photography UI Design
 
-![Apollo Preview](layout/apollo.png)
+![Apollo Preview](apollo.png)
 
 
 #### Developers
