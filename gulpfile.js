@@ -17,20 +17,21 @@ var gulp         = require('gulp'),
 
 // PATHS
 const SRC_PATH = {
-  htmlMain:     'src/html/*.jade',
-  cssMain:      'src/css/main.styl',
-  cssPartials:  'src/css/**/*.styl',
-  js:           'src/js/**/*.js',
-  images:       'src/images/**/*',
-  vendorBootstrapCSS: 'src/vendor/bootstrap/bootstrap.min.css',
-  vendorBootstrapJS: 'src/vendor/bootstrap/bootstrap.min.js'
+  htmlMain           : 'src/html/*.jade',
+  cssMain            : 'src/css/main.styl',
+  cssPartials        : 'src/css/**/*.styl',
+  js                 : 'src/js/**/*.js',
+  images             : 'src/images/**/*',
+  vendorJquery       : 'src/vendor/jquery/jquery.min.js',
+  vendorBootstrapCSS : 'src/vendor/bootstrap/bootstrap.min.css',
+  vendorBootstrapJS  : 'src/vendor/bootstrap/bootstrap.min.js'
 }
 
 const BUILD_PATH = {
-  root:   './',
-  css:    './assets/css/',
-  js:     './assets/js/',
-  images: './assets/images/'
+  root   : './',
+  css    : './assets/css/',
+  js     : './assets/js/',
+  images : './assets/images/'
 }
 
 
@@ -79,6 +80,13 @@ gulp.task('images', function() {
       .pipe(gulp.dest(BUILD_PATH.images));
 });
 
+// JQUERY
+gulp.task('vendorJquery', function() {
+  gulp.src(SRC_PATH.vendorJquery)
+      .pipe(plumber())
+      .pipe(gulp.dest(BUILD_PATH.js));
+});
+
 // BOOTSTRAP CAROUSEL
 gulp.task('vendorBootstrap', function() {
   gulp.src(SRC_PATH.vendorBootstrapCSS)
@@ -107,5 +115,5 @@ gulp.task('browser-sync', ['css'], function() {
 
 // RUN
 gulp.task('default', ['html', 'css', 'js', 'vendorBootstrap', 'watch', 'browser-sync']);
-gulp.task('build',   ['html', 'css', 'js', 'images', 'vendorBootstrap']);
+gulp.task('build',   ['html', 'css', 'js', 'images', 'vendorJquery', 'vendorBootstrap']);
 gulp.task('no-bs',   ['html', 'css', 'js', 'watch']);
