@@ -114,6 +114,6 @@ gulp.task('browser-sync', ['css'], function() {
 });
 
 // RUN
-gulp.task('default', ['html', 'css', 'js', 'vendorBootstrap', 'watch', 'browser-sync']);
-gulp.task('build',   ['html', 'css', 'js', 'images', 'vendorJquery', 'vendorBootstrap']);
+gulp.task('default', ['html', 'css', 'js', 'watch', 'browser-sync']);
 gulp.task('no-bs',   ['html', 'css', 'js', 'watch']);
+gulp.task('build',   ['html', 'css', 'js', 'images', 'vendorJquery', 'vendorBootstrap']);
