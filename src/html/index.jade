@@ -70,7 +70,7 @@ block content
     section.frame.largeslideshow-frame#largeslideshow
       .content-wrapper
         div(id="large-slideshow" class="carousel slide" data-ride="carousel")
-          ol(class="carousel-indicators")
+          img.letterbg(src="assets/images/letter-o-light.png")
 
           div(class="carousel-inner" role="listbox")
             div(class="item active")
@@ -78,13 +78,18 @@ block content
                   alt="Picture of Photographer")
 
             div(class="item")
-              img(src="assets/images/photo-man-camera.jpg",
-                  alt="Picture of Photographer")
+              img(src="assets/images/photo-pyramid.jpg",
+                  alt="Picture of Pyramids")
+
+            div(class="item")
+              img(src="assets/images/photo-city.jpg",
+                  alt="Picture of a City")
 
           a(class="left carousel-control", href="#large-slideshow",
             role="button" data-slide="prev"): span.back
           a(class="right carousel-control", href="#large-slideshow",
             role="button" data-slide="next"): span.next
+
 
 
     //- Photography Frame
