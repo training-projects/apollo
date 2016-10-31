@@ -1,6 +1,7 @@
 // Reset Bootstrap Definitions
 .carousel-control.left
 .carousel-control.right
+  z-index: 3
   display: block
   width: auto
   height: 40px
@@ -15,6 +16,15 @@
     margin-top: 28%
     height: 64px
     padding: 0.8em
+
+  /* @media 1366px */
+  @media (min-width: 1366px)
+    margin-top: 20%
+
+  /* @media 1440px */
+  @media (min-width: 1440px)
+    margin-top: 30%
+
 
 .carousel-control.left
   margin-left: 0.8em

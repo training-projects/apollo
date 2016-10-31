@@ -1,5 +1,5 @@
 .header-content
-  z-index: 2
+  z-index: 4
   position: fixed
   top: 0
   right: 0
@@ -45,6 +45,10 @@
         > .link
           set_font-size(18px)
           color: steelblue
+
+          &:hover
+            text-decoration: none
+            color: color_lightgray
 
 .open
   transform: translateX(0)
